@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <script src="index.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.6.0/moment-timezone-with-data-1970-2030.min.js"></script>
   <title>world clock</title>
 </head>
 <body>
@@ -12,29 +13,31 @@
 
   
     <h1>World Clock</h1>
-      <select>
+      <select id="city">
         <option value="">select a city...</option>
-        <option value="">london</option>
-        <option value="">new york</option>
-        <option value="">auckland</option>
+        <option value="Europe/London">london</option>
+        <option value="America/New_York">new york</option>
+        <option value="Pacific/Auckland">auckland</option>
       </select>
 
-      <div class="city">
+    <div id="cities">
+      <div class="city" id="los-angeles">
         <div>
           <h2>los angeles</h2>
-        <div class="date">August 15th 2022</div>
+        <div class="date"></div>
         </div>
-        <div class="time">10:00 <small> AM </small></div>
+        <div class="time"></div>
       </div>
 
-       <div class="city">
+       <div class="city" id="paris">
         <div>
           <h2>paris </h2>
-        <div class="date">August 15th 2022</div>
+        <div class="date"></div>
         </div>
-        <div class="time">10:00 <small> AM </small></div>
+        <div class="time"></div>
       </div>
     </div>
+    <script src="index.js" defer></script>
  <footer>
  this project was coded by <strong>ramandeep kaur</strong> and is <a href="https://github.com/Ramandeepbunny" target="_blank"> open source on github</a>. 
   </footer>
